@@ -6,5 +6,13 @@
     <fragment
         android:id="@+id/allMoviesFragment"
         android:name="com.example.coroutinesapp.fragments.AllMoviesFragment"
-        android:label="AllMoviesFragment" />
+        android:label="AllMoviesFragment" >
+        <action
+            android:id="@+id/action_allMoviesFragment_to_currentMovieFragment"
+            app:destination="@id/currentMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentMovieFragment"
+        android:name="com.example.coroutinesapp.fragments.CurrentMovieFragment"
+        android:label="CurrentMovieFragment" />
 </navigation>

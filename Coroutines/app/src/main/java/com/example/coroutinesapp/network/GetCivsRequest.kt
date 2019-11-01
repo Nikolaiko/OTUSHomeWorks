@@ -8,6 +8,7 @@ import io.ktor.client.response.readText
 import io.ktor.client.utils.EmptyContent
 import io.ktor.http.HttpMethod
 import io.ktor.http.URLProtocol
+import io.ktor.http.fullPath
 
 class GetCivsRequest {
     private val serverAddress:String = "age-of-empires-2-api.herokuapp.com"
@@ -25,6 +26,25 @@ class GetCivsRequest {
                     host = serverAddress
                     encodedPath = "api/v1/civilizations"
                 }
+                method = HttpMethod.Get
+                body = EmptyContent
+            }
+            call.readText()
+        } catch (requestException:Exception) {
+            requestException.message ?: "Default error message"
+        }
+    }
+
+    suspend fun getCurrentCiv(id:Int):String {
+        return try
+        {
+            val call = client.request<HttpResponse> {
+                url {
+                    protocol = serverProtocol
+                    host = serverAddress
+                    encodedPath = "api/v1/civilization/$id"
+                }
+                println(url.build().fullPath)
                 method = HttpMethod.Get
                 body = EmptyContent
             }

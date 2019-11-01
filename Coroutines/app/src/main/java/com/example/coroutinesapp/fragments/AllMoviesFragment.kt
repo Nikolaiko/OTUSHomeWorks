@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.beust.klaxon.Klaxon
 import com.example.coroutinesapp.R
@@ -15,6 +16,7 @@ import com.example.coroutinesapp.list.CivListAdapter
 import com.example.coroutinesapp.network.GetCivsRequest
 import kotlinx.android.synthetic.main.fragment_all_civs.*
 import kotlinx.coroutines.*
+import java.lang.Exception
 
 class AllMoviesFragment : Fragment(), AdapterListener {
     private val requestJob = Job()
@@ -32,8 +34,11 @@ class AllMoviesFragment : Fragment(), AdapterListener {
         requestScope.launch {
             val responseString:String = GetCivsRequest().getAllCivs()
             withContext(Dispatchers.Main) {
-                println(responseString)
-                val parsedResponse = Klaxon().parse<CivTitleDataList>(responseString)
+                val parsedResponse = try {
+                    Klaxon().parse<CivTitleDataList>(responseString)
+                } catch (parseException:Exception) {
+                    CivTitleDataList(emptyList())
+                }
                 recyclerView.adapter = CivListAdapter(
                     parsedResponse?.civilizations ?: emptyList(),
                     this@AllMoviesFragment)
@@ -41,7 +46,14 @@ class AllMoviesFragment : Fragment(), AdapterListener {
         }
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        requestJob.cancel()
+    }
+
     override fun rowTap(item: CivTitleData) {
-        println("Tap on ${item.name}")
+        val navigationBundle = Bundle()
+        navigationBundle.putInt("id", item.id)
+        view?.findNavController()?.navigate(R.id.action_allMoviesFragment_to_currentMovieFragment, navigationBundle)
     }
 }
