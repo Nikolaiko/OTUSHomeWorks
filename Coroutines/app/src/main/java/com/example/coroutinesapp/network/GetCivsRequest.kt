@@ -1,7 +1,6 @@
 package com.example.coroutinesapp.network
 
 import io.ktor.client.HttpClient
-import io.ktor.client.request.parameter
 import io.ktor.client.request.request
 import io.ktor.client.response.HttpResponse
 import io.ktor.client.response.readText
@@ -11,7 +10,12 @@ import io.ktor.http.URLProtocol
 import io.ktor.http.fullPath
 
 class GetCivsRequest {
-    private val serverAddress:String = "age-of-empires-2-api.herokuapp.com"
+    companion object {
+        private const val SERVER_ADDRESS:String = "age-of-empires-2-api.herokuapp.com"
+        private const val CIVILIZATIONS_ENCODED_PATH:String = "api/v1/civilizations"
+        private const val CIVILIZATION_ENCODED_PATH:String = "api/v1/civilization"
+    }
+
     private val serverProtocol:URLProtocol = URLProtocol.HTTPS
     private val client = HttpClient {
         expectSuccess = false
@@ -23,8 +27,8 @@ class GetCivsRequest {
             val call = client.request<HttpResponse> {
                 url {
                     protocol = serverProtocol
-                    host = serverAddress
-                    encodedPath = "api/v1/civilizations"
+                    host = SERVER_ADDRESS
+                    encodedPath = CIVILIZATIONS_ENCODED_PATH
                 }
                 method = HttpMethod.Get
                 body = EmptyContent
@@ -41,8 +45,8 @@ class GetCivsRequest {
             val call = client.request<HttpResponse> {
                 url {
                     protocol = serverProtocol
-                    host = serverAddress
-                    encodedPath = "api/v1/civilization/$id"
+                    host = SERVER_ADDRESS
+                    encodedPath = "$CIVILIZATION_ENCODED_PATH/$id"
                 }
                 println(url.build().fullPath)
                 method = HttpMethod.Get

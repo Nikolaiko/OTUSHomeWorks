@@ -6,14 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.beust.klaxon.Klaxon
 import com.example.coroutinesapp.R
 import com.example.coroutinesapp.data.CivDetailedData
-import com.example.coroutinesapp.data.CivTitleDataList
-import com.example.coroutinesapp.list.CivListAdapter
 import com.example.coroutinesapp.network.GetCivsRequest
-import kotlinx.android.synthetic.main.fragment_all_civs.*
 import kotlinx.android.synthetic.main.fragment_current_civ.*
 import kotlinx.coroutines.*
 import java.lang.Exception
@@ -22,6 +18,7 @@ class CurrentMovieFragment : Fragment() {
     private val requestJob = Job()
     private val requestScope = CoroutineScope(Dispatchers.IO + requestJob)
     private var civId:Int = -1
+    private val klaxon:Klaxon by lazy { Klaxon() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,24 +38,25 @@ class CurrentMovieFragment : Fragment() {
 
         if (civId != -1) {
             requestScope.launch {
-                val responseString:String = GetCivsRequest().getCurrentCiv(civId)
-                println(responseString)
+                val responseString = GetCivsRequest().getCurrentCiv(civId)
                 withContext(Dispatchers.Main) {
                     val parsedResponse = try {
-                        Klaxon().parse<CivDetailedData>(responseString)
+                        println(responseString)
+                        klaxon.parse<CivDetailedData>(responseString)
                     } catch (parseException:Exception) {
+                        println("Exception : ${parseException.localizedMessage}")
                         CivDetailedData()
                     }
                     civName.text = parsedResponse?.name
-                    civArmyType.text = parsedResponse?.army_type
-                    civBonuses.text = parsedResponse?.civilization_bonus?.joinToString("\n")
+                    civArmyType.text = parsedResponse?.armyType
+                    civBonuses.text = parsedResponse?.civilizationBonus?.joinToString("\n")
                 }
             }
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         requestJob.cancel()
     }
 }

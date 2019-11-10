@@ -9,18 +9,17 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.beust.klaxon.Klaxon
 import com.example.coroutinesapp.R
-import com.example.coroutinesapp.data.CivTitleData
 import com.example.coroutinesapp.data.CivTitleDataList
-import com.example.coroutinesapp.list.AdapterListener
 import com.example.coroutinesapp.list.CivListAdapter
 import com.example.coroutinesapp.network.GetCivsRequest
 import kotlinx.android.synthetic.main.fragment_all_civs.*
 import kotlinx.coroutines.*
 import java.lang.Exception
 
-class AllMoviesFragment : Fragment(), AdapterListener {
+class AllMoviesFragment : Fragment() {
     private val requestJob = Job()
     private val requestScope = CoroutineScope(Dispatchers.IO + requestJob)
+    private val klaxon:Klaxon by lazy { Klaxon() }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_all_civs, container, false)
@@ -32,16 +31,21 @@ class AllMoviesFragment : Fragment(), AdapterListener {
         recyclerView.layoutManager = LinearLayoutManager(context)
 
         requestScope.launch {
-            val responseString:String = GetCivsRequest().getAllCivs()
+            val responseString = GetCivsRequest().getAllCivs()
             withContext(Dispatchers.Main) {
                 val parsedResponse = try {
-                    Klaxon().parse<CivTitleDataList>(responseString)
+                    klaxon.parse<CivTitleDataList>(responseString)
                 } catch (parseException:Exception) {
+                    println("Exception : ${parseException.localizedMessage}")
                     CivTitleDataList(emptyList())
                 }
                 recyclerView.adapter = CivListAdapter(
-                    parsedResponse?.civilizations ?: emptyList(),
-                    this@AllMoviesFragment)
+                    parsedResponse?.civilizations ?: emptyList()
+                ) {
+                    val navigationBundle = Bundle()
+                    navigationBundle.putInt("id", it.id)
+                    view.findNavController().navigate(R.id.action_allMoviesFragment_to_currentMovieFragment, navigationBundle)
+                }
             }
         }
     }
@@ -49,11 +53,5 @@ class AllMoviesFragment : Fragment(), AdapterListener {
     override fun onDestroy() {
         super.onDestroy()
         requestJob.cancel()
-    }
-
-    override fun rowTap(item: CivTitleData) {
-        val navigationBundle = Bundle()
-        navigationBundle.putInt("id", item.id)
-        view?.findNavController()?.navigate(R.id.action_allMoviesFragment_to_currentMovieFragment, navigationBundle)
     }
 }
