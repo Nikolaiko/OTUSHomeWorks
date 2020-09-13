@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF26818F250D31D3002F0EE2 /* AboutTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26818E250D31D3002F0EE2 /* AboutTabScreen.swift */; };
+		CF268192250E61AE002F0EE2 /* AboutMeDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF268191250E61AE002F0EE2 /* AboutMeDialogView.swift */; };
+		CF268194250E68CD002F0EE2 /* GameListTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF268193250E68CD002F0EE2 /* GameListTabScreen.swift */; };
+		CF268196250E6C29002F0EE2 /* NiohScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF268195250E6C29002F0EE2 /* NiohScreen.swift */; };
+		CF26819A250E6D0D002F0EE2 /* GamesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF268199250E6D0D002F0EE2 /* GamesListViewModel.swift */; };
+		CF26819C250E73D4002F0EE2 /* DoomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26819B250E73D4002F0EE2 /* DoomScreen.swift */; };
+		CF26819E250E76C8002F0EE2 /* FirstTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26819D250E76C8002F0EE2 /* FirstTab.swift */; };
 		CF2F445124FB60840057A172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2F445024FB60840057A172 /* AppDelegate.swift */; };
 		CF2F445324FB60840057A172 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2F445224FB60840057A172 /* SceneDelegate.swift */; };
 		CF2F445524FB60840057A172 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2F445424FB60840057A172 /* ContentView.swift */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF26818E250D31D3002F0EE2 /* AboutTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTabScreen.swift; sourceTree = "<group>"; };
+		CF268191250E61AE002F0EE2 /* AboutMeDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeDialogView.swift; sourceTree = "<group>"; };
+		CF268193250E68CD002F0EE2 /* GameListTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListTabScreen.swift; sourceTree = "<group>"; };
+		CF268195250E6C29002F0EE2 /* NiohScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiohScreen.swift; sourceTree = "<group>"; };
+		CF268199250E6D0D002F0EE2 /* GamesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListViewModel.swift; sourceTree = "<group>"; };
+		CF26819B250E73D4002F0EE2 /* DoomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoomScreen.swift; sourceTree = "<group>"; };
+		CF26819D250E76C8002F0EE2 /* FirstTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTab.swift; sourceTree = "<group>"; };
 		CF2F444D24FB60840057A172 /* NavigationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2F445024FB60840057A172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF2F445224FB60840057A172 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF26818D250D31B3002F0EE2 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				CF26818E250D31D3002F0EE2 /* AboutTabScreen.swift */,
+				CF268193250E68CD002F0EE2 /* GameListTabScreen.swift */,
+				CF26819D250E76C8002F0EE2 /* FirstTab.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		CF268190250E6181002F0EE2 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				CF268191250E61AE002F0EE2 /* AboutMeDialogView.swift */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		CF268197250E6C76002F0EE2 /* GameScreens */ = {
+			isa = PBXGroup;
+			children = (
+				CF268195250E6C29002F0EE2 /* NiohScreen.swift */,
+				CF26819B250E73D4002F0EE2 /* DoomScreen.swift */,
+			);
+			path = GameScreens;
+			sourceTree = "<group>";
+		};
+		CF268198250E6CEA002F0EE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF268199250E6D0D002F0EE2 /* GamesListViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CF2F444424FB60840057A172 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +105,10 @@
 		CF2F444F24FB60840057A172 /* NavigationApp */ = {
 			isa = PBXGroup;
 			children = (
+				CF268198250E6CEA002F0EE2 /* Model */,
+				CF268197250E6C76002F0EE2 /* GameScreens */,
+				CF268190250E6181002F0EE2 /* Dialogs */,
+				CF26818D250D31B3002F0EE2 /* Tabs */,
 				CF2F445024FB60840057A172 /* AppDelegate.swift */,
 				CF2F445224FB60840057A172 /* SceneDelegate.swift */,
 				CF2F445424FB60840057A172 /* ContentView.swift */,
@@ -146,9 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF26819A250E6D0D002F0EE2 /* GamesListViewModel.swift in Sources */,
+				CF268192250E61AE002F0EE2 /* AboutMeDialogView.swift in Sources */,
+				CF26819E250E76C8002F0EE2 /* FirstTab.swift in Sources */,
 				CF2F445124FB60840057A172 /* AppDelegate.swift in Sources */,
+				CF26818F250D31D3002F0EE2 /* AboutTabScreen.swift in Sources */,
 				CF2F445324FB60840057A172 /* SceneDelegate.swift in Sources */,
 				CF2F445524FB60840057A172 /* ContentView.swift in Sources */,
+				CF268194250E68CD002F0EE2 /* GameListTabScreen.swift in Sources */,
+				CF26819C250E73D4002F0EE2 /* DoomScreen.swift in Sources */,
+				CF268196250E6C29002F0EE2 /* NiohScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

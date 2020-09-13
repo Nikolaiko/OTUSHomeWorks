@@ -5,9 +5,7 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection) {
-            Text("Intro.\nDeveloper Diary.")
-                .multilineTextAlignment(.center)
-                .font(.title)
+            FirstTab(tabSelection: $selection)
                 .tabItem {
                     VStack {
                         Image("first")
@@ -15,8 +13,7 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-            Text("Second View")
-                .font(.title)
+            GameListTabScreen()
                 .tabItem {
                     VStack {
                         Image("second")
@@ -24,15 +21,21 @@ struct ContentView: View {
                     }
                 }
                 .tag(1)
-            Text("Second View")
-            .font(.title)
-            .tabItem {
-                VStack {
-                    Image("second")
-                    Text("Second")
+            AboutTabScreen()
+                .frame(minWidth: 0,
+                       maxWidth: .infinity,
+                       minHeight: 0,
+                       maxHeight: .infinity
+                )
+                .background(Color.white)
+                .edgesIgnoringSafeArea(.top)
+                .tabItem {
+                    VStack {
+                        Image("second")
+                        Text("Third")
+                    }
                 }
-            }
-            .tag(2)
+                .tag(2)
         }
     }
 }
