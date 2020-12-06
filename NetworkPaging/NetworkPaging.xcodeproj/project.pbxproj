@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFD2A3262572963E000DFABA /* NetworkPagingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2A3252572963E000DFABA /* NetworkPagingApp.swift */; };
+		CFD2A3282572963E000DFABA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2A3272572963E000DFABA /* ContentView.swift */; };
+		CFD2A32A25729642000DFABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD2A32925729642000DFABA /* Assets.xcassets */; };
+		CFD2A32D25729642000DFABA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD2A32C25729642000DFABA /* Preview Assets.xcassets */; };
+		CFD2A33825729643000DFABA /* NetworkPagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2A33725729643000DFABA /* NetworkPagingTests.swift */; };
+		CFD2A34325729643000DFABA /* NetworkPagingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2A34225729643000DFABA /* NetworkPagingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFD2A33425729643000DFABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD2A31A2572963E000DFABA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD2A3212572963E000DFABA;
+			remoteInfo = NetworkPaging;
+		};
+		CFD2A33F25729643000DFABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD2A31A2572963E000DFABA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD2A3212572963E000DFABA;
+			remoteInfo = NetworkPaging;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFD2A3222572963E000DFABA /* NetworkPaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkPaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD2A3252572963E000DFABA /* NetworkPagingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPagingApp.swift; sourceTree = "<group>"; };
+		CFD2A3272572963E000DFABA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CFD2A32925729642000DFABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFD2A32C25729642000DFABA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CFD2A32E25729642000DFABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD2A33325729643000DFABA /* NetworkPagingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkPagingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD2A33725729643000DFABA /* NetworkPagingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPagingTests.swift; sourceTree = "<group>"; };
+		CFD2A33925729643000DFABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD2A33E25729643000DFABA /* NetworkPagingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkPagingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD2A34225729643000DFABA /* NetworkPagingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPagingUITests.swift; sourceTree = "<group>"; };
+		CFD2A34425729643000DFABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFD2A31F2572963E000DFABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD2A33025729643000DFABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD2A33B25729643000DFABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFD2A3192572963E000DFABA = {
+			isa = PBXGroup;
+			children = (
+				CFD2A3242572963E000DFABA /* NetworkPaging */,
+				CFD2A33625729643000DFABA /* NetworkPagingTests */,
+				CFD2A34125729643000DFABA /* NetworkPagingUITests */,
+				CFD2A3232572963E000DFABA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFD2A3232572963E000DFABA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2A3222572963E000DFABA /* NetworkPaging.app */,
+				CFD2A33325729643000DFABA /* NetworkPagingTests.xctest */,
+				CFD2A33E25729643000DFABA /* NetworkPagingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFD2A3242572963E000DFABA /* NetworkPaging */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2A3252572963E000DFABA /* NetworkPagingApp.swift */,
+				CFD2A3272572963E000DFABA /* ContentView.swift */,
+				CFD2A32925729642000DFABA /* Assets.xcassets */,
+				CFD2A32E25729642000DFABA /* Info.plist */,
+				CFD2A32B25729642000DFABA /* Preview Content */,
+			);
+			path = NetworkPaging;
+			sourceTree = "<group>";
+		};
+		CFD2A32B25729642000DFABA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2A32C25729642000DFABA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CFD2A33625729643000DFABA /* NetworkPagingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2A33725729643000DFABA /* NetworkPagingTests.swift */,
+				CFD2A33925729643000DFABA /* Info.plist */,
+			);
+			path = NetworkPagingTests;
+			sourceTree = "<group>";
+		};
+		CFD2A34125729643000DFABA /* NetworkPagingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2A34225729643000DFABA /* NetworkPagingUITests.swift */,
+				CFD2A34425729643000DFABA /* Info.plist */,
+			);
+			path = NetworkPagingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFD2A3212572963E000DFABA /* NetworkPaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD2A34725729643000DFABA /* Build configuration list for PBXNativeTarget "NetworkPaging" */;
+			buildPhases = (
+				CFD2A31E2572963E000DFABA /* Sources */,
+				CFD2A31F2572963E000DFABA /* Frameworks */,
+				CFD2A3202572963E000DFABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkPaging;
+			productName = NetworkPaging;
+			productReference = CFD2A3222572963E000DFABA /* NetworkPaging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFD2A33225729643000DFABA /* NetworkPagingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD2A34A25729643000DFABA /* Build configuration list for PBXNativeTarget "NetworkPagingTests" */;
+			buildPhases = (
+				CFD2A32F25729643000DFABA /* Sources */,
+				CFD2A33025729643000DFABA /* Frameworks */,
+				CFD2A33125729643000DFABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFD2A33525729643000DFABA /* PBXTargetDependency */,
+			);
+			name = NetworkPagingTests;
+			productName = NetworkPagingTests;
+			productReference = CFD2A33325729643000DFABA /* NetworkPagingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFD2A33D25729643000DFABA /* NetworkPagingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD2A34D25729643000DFABA /* Build configuration list for PBXNativeTarget "NetworkPagingUITests" */;
+			buildPhases = (
+				CFD2A33A25729643000DFABA /* Sources */,
+				CFD2A33B25729643000DFABA /* Frameworks */,
+				CFD2A33C25729643000DFABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFD2A34025729643000DFABA /* PBXTargetDependency */,
+			);
+			name = NetworkPagingUITests;
+			productName = NetworkPagingUITests;
+			productReference = CFD2A33E25729643000DFABA /* NetworkPagingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFD2A31A2572963E000DFABA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					CFD2A3212572963E000DFABA = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					CFD2A33225729643000DFABA = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = CFD2A3212572963E000DFABA;
+					};
+					CFD2A33D25729643000DFABA = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = CFD2A3212572963E000DFABA;
+					};
+				};
+			};
+			buildConfigurationList = CFD2A31D2572963E000DFABA /* Build configuration list for PBXProject "NetworkPaging" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFD2A3192572963E000DFABA;
+			productRefGroup = CFD2A3232572963E000DFABA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFD2A3212572963E000DFABA /* NetworkPaging */,
+				CFD2A33225729643000DFABA /* NetworkPagingTests */,
+				CFD2A33D25729643000DFABA /* NetworkPagingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFD2A3202572963E000DFABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD2A32D25729642000DFABA /* Preview Assets.xcassets in Resources */,
+				CFD2A32A25729642000DFABA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD2A33125729643000DFABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD2A33C25729643000DFABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFD2A31E2572963E000DFABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD2A3282572963E000DFABA /* ContentView.swift in Sources */,
+				CFD2A3262572963E000DFABA /* NetworkPagingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD2A32F25729643000DFABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD2A33825729643000DFABA /* NetworkPagingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD2A33A25729643000DFABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD2A34325729643000DFABA /* NetworkPagingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFD2A33525729643000DFABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD2A3212572963E000DFABA /* NetworkPaging */;
+			targetProxy = CFD2A33425729643000DFABA /* PBXContainerItemProxy */;
+		};
+		CFD2A34025729643000DFABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD2A3212572963E000DFABA /* NetworkPaging */;
+			targetProxy = CFD2A33F25729643000DFABA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CFD2A34525729643000DFABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFD2A34625729643000DFABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFD2A34825729643000DFABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NetworkPaging/Preview Content\"";
+				DEVELOPMENT_TEAM = ZWXN4J2VCP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NetworkPaging/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Baklanov.NetworkPaging";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFD2A34925729643000DFABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NetworkPaging/Preview Content\"";
+				DEVELOPMENT_TEAM = ZWXN4J2VCP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NetworkPaging/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Baklanov.NetworkPaging";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFD2A34B25729643000DFABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWXN4J2VCP;
+				INFOPLIST_FILE = NetworkPagingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Baklanov.NetworkPagingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkPaging.app/NetworkPaging";
+			};
+			name = Debug;
+		};
+		CFD2A34C25729643000DFABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWXN4J2VCP;
+				INFOPLIST_FILE = NetworkPagingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Baklanov.NetworkPagingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkPaging.app/NetworkPaging";
+			};
+			name = Release;
+		};
+		CFD2A34E25729643000DFABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWXN4J2VCP;
+				INFOPLIST_FILE = NetworkPagingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Baklanov.NetworkPagingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetworkPaging;
+			};
+			name = Debug;
+		};
+		CFD2A34F25729643000DFABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWXN4J2VCP;
+				INFOPLIST_FILE = NetworkPagingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Baklanov.NetworkPagingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetworkPaging;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFD2A31D2572963E000DFABA /* Build configuration list for PBXProject "NetworkPaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD2A34525729643000DFABA /* Debug */,
+				CFD2A34625729643000DFABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD2A34725729643000DFABA /* Build configuration list for PBXNativeTarget "NetworkPaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD2A34825729643000DFABA /* Debug */,
+				CFD2A34925729643000DFABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD2A34A25729643000DFABA /* Build configuration list for PBXNativeTarget "NetworkPagingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD2A34B25729643000DFABA /* Debug */,
+				CFD2A34C25729643000DFABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD2A34D25729643000DFABA /* Build configuration list for PBXNativeTarget "NetworkPagingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD2A34E25729643000DFABA /* Debug */,
+				CFD2A34F25729643000DFABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFD2A31A2572963E000DFABA /* Project object */;
+}
