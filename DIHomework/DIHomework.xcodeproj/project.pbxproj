@@ -38,6 +38,8 @@
 		CFD340EC25AE162C000FA619 /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340EB25AE162C000FA619 /* DataLayer */; };
 		CFD340F725AE17D5000FA619 /* CoreLayerService in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340F625AE17D5000FA619 /* CoreLayerService */; };
 		CFD340F925AE17E1000FA619 /* CoreLayerService in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340F825AE17E1000FA619 /* CoreLayerService */; };
+		CFD3410025AE1CC6000FA619 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD340FF25AE1CC6000FA619 /* ServiceProvider.swift */; };
+		CFD3410625AE1D95000FA619 /* DependancyLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3410525AE1D95000FA619 /* DependancyLocator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		CF656B0725AE0748007C99F4 /* DIHomework.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DIHomework.entitlements; sourceTree = "<group>"; };
 		CFD340E425AE15CE000FA619 /* DataLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DataLayer; sourceTree = "<group>"; };
 		CFD340F125AE1737000FA619 /* CoreLayerService */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreLayerService; sourceTree = "<group>"; };
+		CFD340FF25AE1CC6000FA619 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		CFD3410525AE1D95000FA619 /* DependancyLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependancyLocator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		790F845225AD51B400424B92 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CFD340FE25AE1BFA000FA619 /* DI */,
 				790F84B225AD8E9500424B92 /* Packages */,
 				790F84AA25AD71BB00424B92 /* ViewModel */,
 				790F848925AD571100424B92 /* UI */,
@@ -211,6 +216,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		CFD340FE25AE1BFA000FA619 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CFD340FF25AE1CC6000FA619 /* ServiceProvider.swift */,
+				CFD3410525AE1D95000FA619 /* DependancyLocator.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -316,12 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD3410625AE1D95000FA619 /* DependancyLocator.swift in Sources */,
 				CF656AFE25AE032A007C99F4 /* ImageLoader.swift in Sources */,
 				CF656B0325AE0366007C99F4 /* EnvValues+Cache.swift in Sources */,
 				CF656AF725AE0305007C99F4 /* ImageCache.swift in Sources */,
 				790F84CA25AD9E3300424B92 /* CharacterViewModel.swift in Sources */,
 				790F848525AD52FA00424B92 /* NavStack.swift in Sources */,
 				CF656AEF25AE02C1007C99F4 /* AsyncImage.swift in Sources */,
+				CFD3410025AE1CC6000FA619 /* ServiceProvider.swift in Sources */,
 				CF656AD125ADF384007C99F4 /* EpisodeCell.swift in Sources */,
 				790F846825AD51B400424B92 /* ContentView.swift in Sources */,
 				790F848325AD52FA00424B92 /* Enums.swift in Sources */,
