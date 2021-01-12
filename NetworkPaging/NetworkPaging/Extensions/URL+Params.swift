@@ -1,7 +1,7 @@
 import Foundation
 
 protocol URLQueryParameterStringConvertible {
-    var queryParameters: String {get}
+    var queryParameters: String { get }
 }
 
 extension URL {
