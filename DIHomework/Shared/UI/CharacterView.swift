@@ -1,4 +1,5 @@
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CharacterView: View {
     let characterName: String
@@ -17,11 +18,14 @@ struct CharacterView: View {
                     Spacer()
                 }
                 if model.state.character.image != "" {
-                    AsyncImage(url: URL(string: model.state.character.image)!,
-                               placeholder: { Text("Loading ...") },
-                               image: { Image(uiImage: $0).resizable() }
-                    )
-                    .frame(idealHeight: UIScreen.main.bounds.width / 2 * 3)
+                    WebImage(url: URL(string: model.state.character.image))
+                        .resizable()
+                        .placeholder {
+                            Rectangle().foregroundColor(.gray)
+                        }
+                        .indicator(.activity)
+                        .transition(.fade(duration: 0.5))
+                        .scaledToFit()
                 }
                 Button(action: { navigation.pop() }, label: {
                     Text("Back")

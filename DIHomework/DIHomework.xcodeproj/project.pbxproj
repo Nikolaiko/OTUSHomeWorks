@@ -26,20 +26,17 @@
 		CF656AD125ADF384007C99F4 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AD025ADF384007C99F4 /* EpisodeCell.swift */; };
 		CF656ADF25ADFA66007C99F4 /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656ADE25ADFA66007C99F4 /* EpisodesViewModel.swift */; };
 		CF656AE025ADFA66007C99F4 /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656ADE25ADFA66007C99F4 /* EpisodesViewModel.swift */; };
-		CF656AEF25AE02C1007C99F4 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AEE25AE02C1007C99F4 /* AsyncImage.swift */; };
-		CF656AF025AE02C1007C99F4 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AEE25AE02C1007C99F4 /* AsyncImage.swift */; };
-		CF656AF725AE0305007C99F4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AF625AE0305007C99F4 /* ImageCache.swift */; };
-		CF656AF825AE0305007C99F4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AF625AE0305007C99F4 /* ImageCache.swift */; };
-		CF656AFE25AE032A007C99F4 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AFD25AE032A007C99F4 /* ImageLoader.swift */; };
-		CF656AFF25AE032A007C99F4 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AFD25AE032A007C99F4 /* ImageLoader.swift */; };
-		CF656B0325AE0366007C99F4 /* EnvValues+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656B0225AE0366007C99F4 /* EnvValues+Cache.swift */; };
-		CF656B0425AE0366007C99F4 /* EnvValues+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656B0225AE0366007C99F4 /* EnvValues+Cache.swift */; };
 		CFD340EA25AE1622000FA619 /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340E925AE1622000FA619 /* DataLayer */; };
 		CFD340EC25AE162C000FA619 /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340EB25AE162C000FA619 /* DataLayer */; };
 		CFD340F725AE17D5000FA619 /* CoreLayerService in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340F625AE17D5000FA619 /* CoreLayerService */; };
 		CFD340F925AE17E1000FA619 /* CoreLayerService in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340F825AE17E1000FA619 /* CoreLayerService */; };
 		CFD3410025AE1CC6000FA619 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD340FF25AE1CC6000FA619 /* ServiceProvider.swift */; };
 		CFD3410625AE1D95000FA619 /* DependancyLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3410525AE1D95000FA619 /* DependancyLocator.swift */; };
+		CFE0A21425AE848B00F4932A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CFE0A21325AE848B00F4932A /* SDWebImageSwiftUI */; };
+		CFE0A21C25AE85D600F4932A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CFE0A21B25AE85D600F4932A /* SDWebImageSwiftUI */; };
+		CFE0A21F25AE862200F4932A /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD340FF25AE1CC6000FA619 /* ServiceProvider.swift */; };
+		CFE0A22225AE862400F4932A /* DependancyLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3410525AE1D95000FA619 /* DependancyLocator.swift */; };
+		CFE0A22525AE863600F4932A /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AD025ADF384007C99F4 /* EpisodeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,10 +55,6 @@
 		790F84C925AD9E3300424B92 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		CF656AD025ADF384007C99F4 /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
 		CF656ADE25ADFA66007C99F4 /* EpisodesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesViewModel.swift; sourceTree = "<group>"; };
-		CF656AEE25AE02C1007C99F4 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
-		CF656AF625AE0305007C99F4 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
-		CF656AFD25AE032A007C99F4 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		CF656B0225AE0366007C99F4 /* EnvValues+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvValues+Cache.swift"; sourceTree = "<group>"; };
 		CF656B0725AE0748007C99F4 /* DIHomework.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DIHomework.entitlements; sourceTree = "<group>"; };
 		CFD340E425AE15CE000FA619 /* DataLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DataLayer; sourceTree = "<group>"; };
 		CFD340F125AE1737000FA619 /* CoreLayerService */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreLayerService; sourceTree = "<group>"; };
@@ -74,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE0A21425AE848B00F4932A /* SDWebImageSwiftUI in Frameworks */,
 				CFD340EA25AE1622000FA619 /* DataLayer in Frameworks */,
 				CFD340F925AE17E1000FA619 /* CoreLayerService in Frameworks */,
 			);
@@ -83,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE0A21C25AE85D600F4932A /* SDWebImageSwiftUI in Frameworks */,
 				CFD340EC25AE162C000FA619 /* DataLayer in Frameworks */,
 				CFD340F725AE17D5000FA619 /* CoreLayerService in Frameworks */,
 			);
@@ -156,8 +151,6 @@
 		790F848925AD571100424B92 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CF656AF525AE02F6007C99F4 /* Helpers */,
-				CF656AED25AE02B0007C99F4 /* Views */,
 				CF656ACF25ADF368007C99F4 /* Cells */,
 				790F848A25AD572E00424B92 /* EpisodesView.swift */,
 				790F84C425AD9E1700424B92 /* CharacterView.swift */,
@@ -198,24 +191,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		CF656AED25AE02B0007C99F4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CF656AEE25AE02C1007C99F4 /* AsyncImage.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		CF656AF525AE02F6007C99F4 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				CF656AF625AE0305007C99F4 /* ImageCache.swift */,
-				CF656AFD25AE032A007C99F4 /* ImageLoader.swift */,
-				CF656B0225AE0366007C99F4 /* EnvValues+Cache.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		CFD340FE25AE1BFA000FA619 /* DI */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +219,7 @@
 			packageProductDependencies = (
 				CFD340E925AE1622000FA619 /* DataLayer */,
 				CFD340F825AE17E1000FA619 /* CoreLayerService */,
+				CFE0A21325AE848B00F4932A /* SDWebImageSwiftUI */,
 			);
 			productName = "DIHomework (iOS)";
 			productReference = 790F845A25AD51B400424B92 /* DIHomework.app */;
@@ -265,6 +241,7 @@
 			packageProductDependencies = (
 				CFD340EB25AE162C000FA619 /* DataLayer */,
 				CFD340F625AE17D5000FA619 /* CoreLayerService */,
+				CFE0A21B25AE85D600F4932A /* SDWebImageSwiftUI */,
 			);
 			productName = "DIHomework (macOS)";
 			productReference = 790F846225AD51B400424B92 /* DIHomework.app */;
@@ -296,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 790F844D25AD51B400424B92;
+			packageReferences = (
+				CFE0A21225AE848B00F4932A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 790F845B25AD51B400424B92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -331,12 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD3410625AE1D95000FA619 /* DependancyLocator.swift in Sources */,
-				CF656AFE25AE032A007C99F4 /* ImageLoader.swift in Sources */,
-				CF656B0325AE0366007C99F4 /* EnvValues+Cache.swift in Sources */,
-				CF656AF725AE0305007C99F4 /* ImageCache.swift in Sources */,
 				790F84CA25AD9E3300424B92 /* CharacterViewModel.swift in Sources */,
 				790F848525AD52FA00424B92 /* NavStack.swift in Sources */,
-				CF656AEF25AE02C1007C99F4 /* AsyncImage.swift in Sources */,
 				CFD3410025AE1CC6000FA619 /* ServiceProvider.swift in Sources */,
 				CF656AD125ADF384007C99F4 /* EpisodeCell.swift in Sources */,
 				790F846825AD51B400424B92 /* ContentView.swift in Sources */,
@@ -355,15 +331,14 @@
 				790F84CB25AD9E3300424B92 /* CharacterViewModel.swift in Sources */,
 				CF656AE025ADFA66007C99F4 /* EpisodesViewModel.swift in Sources */,
 				790F848625AD52FA00424B92 /* NavStack.swift in Sources */,
+				CFE0A22525AE863600F4932A /* EpisodeCell.swift in Sources */,
+				CFE0A21F25AE862200F4932A /* ServiceProvider.swift in Sources */,
 				790F846925AD51B400424B92 /* ContentView.swift in Sources */,
-				CF656AF025AE02C1007C99F4 /* AsyncImage.swift in Sources */,
-				CF656AF825AE0305007C99F4 /* ImageCache.swift in Sources */,
 				790F848425AD52FA00424B92 /* Enums.swift in Sources */,
 				790F846725AD51B400424B92 /* DIHomeworkApp.swift in Sources */,
-				CF656B0425AE0366007C99F4 /* EnvValues+Cache.swift in Sources */,
+				CFE0A22225AE862400F4932A /* DependancyLocator.swift in Sources */,
 				790F848C25AD572E00424B92 /* EpisodesView.swift in Sources */,
 				790F84C625AD9E1700424B92 /* CharacterView.swift in Sources */,
-				CF656AFF25AE032A007C99F4 /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +585,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		CFE0A21225AE848B00F4932A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		CFD340E925AE1622000FA619 /* DataLayer */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -626,6 +612,16 @@
 		CFD340F825AE17E1000FA619 /* CoreLayerService */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CoreLayerService;
+		};
+		CFE0A21325AE848B00F4932A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFE0A21225AE848B00F4932A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		CFE0A21B25AE85D600F4932A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFE0A21225AE848B00F4932A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
