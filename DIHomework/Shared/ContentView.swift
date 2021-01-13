@@ -1,10 +1,13 @@
 import SwiftUI
+import CoreLayerService
 
 struct ContentView: View {
     var body: some View {
         NavControllerView(transition: .custom(.slide)) {
             EpisodesView()
-        }        
+        }
+        .environmentObject(BBCharacterViewModel(ServiceProvider.shared.getDependancy(type: NetworkService.self)!))
+        .environmentObject(BBEpisodesViewModel(ServiceProvider.shared.getDependancy(type: NetworkService.self)!))
     }
 }
 

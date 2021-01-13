@@ -5,7 +5,7 @@ struct CharacterView: View {
     let characterName: String
     
     @EnvironmentObject private var navigation: NavControllerViewModel
-    @ObservedObject private var model = CharacterViewModel()
+    @EnvironmentObject private var model: BBCharacterViewModel
     
     var body: some View {
         ZStack {
@@ -17,8 +17,8 @@ struct CharacterView: View {
                         .foregroundColor(.black)
                     Spacer()
                 }
-                if model.state.character.image != "" {
-                    WebImage(url: URL(string: model.state.character.image))
+                if model.character.image != "" {
+                    WebImage(url: URL(string: model.character.image))
                         .resizable()
                         .placeholder {
                             Rectangle().foregroundColor(.gray)
@@ -33,7 +33,7 @@ struct CharacterView: View {
                 Spacer()
             }
             .background(Color.red)
-            if model.state.isLoading {
+            if model.isLoading {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: Color.blue))
                     .scaleEffect(1.5, anchor: .center)

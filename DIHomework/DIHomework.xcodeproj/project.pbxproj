@@ -21,11 +21,11 @@
 		790F848C25AD572E00424B92 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F848A25AD572E00424B92 /* EpisodesView.swift */; };
 		790F84C525AD9E1700424B92 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F84C425AD9E1700424B92 /* CharacterView.swift */; };
 		790F84C625AD9E1700424B92 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F84C425AD9E1700424B92 /* CharacterView.swift */; };
-		790F84CA25AD9E3300424B92 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F84C925AD9E3300424B92 /* CharacterViewModel.swift */; };
-		790F84CB25AD9E3300424B92 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F84C925AD9E3300424B92 /* CharacterViewModel.swift */; };
+		790F84CA25AD9E3300424B92 /* BBCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F84C925AD9E3300424B92 /* BBCharacterViewModel.swift */; };
+		790F84CB25AD9E3300424B92 /* BBCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F84C925AD9E3300424B92 /* BBCharacterViewModel.swift */; };
 		CF656AD125ADF384007C99F4 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AD025ADF384007C99F4 /* EpisodeCell.swift */; };
-		CF656ADF25ADFA66007C99F4 /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656ADE25ADFA66007C99F4 /* EpisodesViewModel.swift */; };
-		CF656AE025ADFA66007C99F4 /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656ADE25ADFA66007C99F4 /* EpisodesViewModel.swift */; };
+		CF656ADF25ADFA66007C99F4 /* BBEpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656ADE25ADFA66007C99F4 /* BBEpisodesViewModel.swift */; };
+		CF656AE025ADFA66007C99F4 /* BBEpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656ADE25ADFA66007C99F4 /* BBEpisodesViewModel.swift */; };
 		CFD340EA25AE1622000FA619 /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340E925AE1622000FA619 /* DataLayer */; };
 		CFD340EC25AE162C000FA619 /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340EB25AE162C000FA619 /* DataLayer */; };
 		CFD340F725AE17D5000FA619 /* CoreLayerService in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340F625AE17D5000FA619 /* CoreLayerService */; };
@@ -52,9 +52,9 @@
 		790F848225AD52FA00424B92 /* NavStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavStack.swift; sourceTree = "<group>"; };
 		790F848A25AD572E00424B92 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		790F84C425AD9E1700424B92 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
-		790F84C925AD9E3300424B92 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		790F84C925AD9E3300424B92 /* BBCharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacterViewModel.swift; sourceTree = "<group>"; };
 		CF656AD025ADF384007C99F4 /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
-		CF656ADE25ADFA66007C99F4 /* EpisodesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesViewModel.swift; sourceTree = "<group>"; };
+		CF656ADE25ADFA66007C99F4 /* BBEpisodesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBEpisodesViewModel.swift; sourceTree = "<group>"; };
 		CF656B0725AE0748007C99F4 /* DIHomework.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DIHomework.entitlements; sourceTree = "<group>"; };
 		CFD340E425AE15CE000FA619 /* DataLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DataLayer; sourceTree = "<group>"; };
 		CFD340F125AE1737000FA619 /* CoreLayerService */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreLayerService; sourceTree = "<group>"; };
@@ -161,8 +161,8 @@
 		790F84AA25AD71BB00424B92 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CF656ADE25ADFA66007C99F4 /* EpisodesViewModel.swift */,
-				790F84C925AD9E3300424B92 /* CharacterViewModel.swift */,
+				CF656ADE25ADFA66007C99F4 /* BBEpisodesViewModel.swift */,
+				790F84C925AD9E3300424B92 /* BBCharacterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -311,13 +311,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD3410625AE1D95000FA619 /* DependancyLocator.swift in Sources */,
-				790F84CA25AD9E3300424B92 /* CharacterViewModel.swift in Sources */,
+				790F84CA25AD9E3300424B92 /* BBCharacterViewModel.swift in Sources */,
 				790F848525AD52FA00424B92 /* NavStack.swift in Sources */,
 				CFD3410025AE1CC6000FA619 /* ServiceProvider.swift in Sources */,
 				CF656AD125ADF384007C99F4 /* EpisodeCell.swift in Sources */,
 				790F846825AD51B400424B92 /* ContentView.swift in Sources */,
 				790F848325AD52FA00424B92 /* Enums.swift in Sources */,
-				CF656ADF25ADFA66007C99F4 /* EpisodesViewModel.swift in Sources */,
+				CF656ADF25ADFA66007C99F4 /* BBEpisodesViewModel.swift in Sources */,
 				790F846625AD51B400424B92 /* DIHomeworkApp.swift in Sources */,
 				790F848B25AD572E00424B92 /* EpisodesView.swift in Sources */,
 				790F84C525AD9E1700424B92 /* CharacterView.swift in Sources */,
@@ -328,8 +328,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790F84CB25AD9E3300424B92 /* CharacterViewModel.swift in Sources */,
-				CF656AE025ADFA66007C99F4 /* EpisodesViewModel.swift in Sources */,
+				790F84CB25AD9E3300424B92 /* BBCharacterViewModel.swift in Sources */,
+				CF656AE025ADFA66007C99F4 /* BBEpisodesViewModel.swift in Sources */,
 				790F848625AD52FA00424B92 /* NavStack.swift in Sources */,
 				CFE0A22525AE863600F4932A /* EpisodeCell.swift in Sources */,
 				CFE0A21F25AE862200F4932A /* ServiceProvider.swift in Sources */,

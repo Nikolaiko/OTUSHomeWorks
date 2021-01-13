@@ -1,7 +1,7 @@
 import SwiftUI
 
 public struct EpisodesView: View {
-    @ObservedObject private var model = EpisodesViewModel()    
+    @EnvironmentObject private var model: BBEpisodesViewModel
     
     public var body: some View {
         ZStack {
@@ -14,7 +14,7 @@ public struct EpisodesView: View {
                     Spacer()
                 }
                 ScrollView {
-                    ForEach(model.state.chapters) { episode in
+                    ForEach(model.chapters) { episode in
                         HStack {
                             Spacer()
                             EpisodeCell(episode: episode)
@@ -26,7 +26,7 @@ public struct EpisodesView: View {
                 Spacer()
             }
             .background(Color.red)
-            if model.state.isLoading {
+            if model.isLoading {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: Color.blue))
                     .scaleEffect(1.5, anchor: .center)

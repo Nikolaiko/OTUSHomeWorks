@@ -3,22 +3,23 @@ import Combine
 import DataLayer
 import CoreLayerService
 
-public final class CharacterViewModel : ObservableObject {
-    
-    struct State {
-        var character: CharacterData = CharacterData(characterId: -1, characterName: "", characterImage: "")
-        var isLoading = true
-        var errorMessage = ""
-    }
-    
-    private let networkService = BreakingBadApi()
-    @Published private(set) var state = State()
-    
+public final class BBCharacterViewModel : ObservableObject {
+                
+    @Published private(set) public var character: CharacterData = CharacterData(characterId: -1, characterName: "", characterImage: "")
+    @Published private(set) public var isLoading = true
+    @Published private(set) public var errorMessage = ""
+        
     private var subscriptions = Set<AnyCancellable>()
     
+    private let networkService: NetworkService
+    
+    public init(_ service: NetworkService) {
+        networkService = service
+    }
+    
     func fetchCharacter(characterName: String) {
-        state.isLoading = true
-        state.errorMessage = ""
+        isLoading = true
+        errorMessage = ""
         
         networkService.getCharacterByName(name: characterName)
             .map({ (characters) -> CharacterData in
@@ -33,7 +34,6 @@ public final class CharacterViewModel : ObservableObject {
                 }
             })
             .mapError({ error in
-                print(error)
                 return error
             })
             .sink(receiveCompletion: onRecieve,
@@ -42,22 +42,21 @@ public final class CharacterViewModel : ObservableObject {
     }
     
     private func onRecieve(_ completion: Subscribers.Completion<Error>) {
-        state.isLoading = false
+        isLoading = false
         
         switch completion {
             case .finished:
-                state.errorMessage = ""
+                errorMessage = ""
                 break
             case .failure:
                 print("Error")
-                state.errorMessage = "Error loading character"
+                errorMessage = "Error loading character"
         }
     }
 
-    private func onRecieve(_ character: CharacterData) {
-        print(character)
-        state.character = character
-        state.errorMessage = ""
-        state.isLoading = false
+    private func onRecieve(_ loadedCharacter: CharacterData) {
+        character = loadedCharacter
+        errorMessage = ""
+        isLoading = false
     }
 }

@@ -3,22 +3,22 @@ import Combine
 import CoreLayerService
 import DataLayer
 
-public final class EpisodesViewModel : ObservableObject {
+public final class BBEpisodesViewModel : ObservableObject {
     
-    struct State {
-        var chapters: [EpisodeData] = []
-        var isLoading = true
-        var errorMessage = ""
-    }
-    
-    private let networkService = BreakingBadApi()
-    @Published private(set) var state = State()
+    @Published private(set) public var chapters: [EpisodeData] = []
+    @Published private(set) public var isLoading = true
+    @Published private(set) public var errorMessage = ""
     
     private var subscriptions = Set<AnyCancellable>()
+    private let networkService: NetworkService
+    
+    public init(_ service: NetworkService) {
+        networkService = service
+    }
     
     func fetchCharacters() {
-        state.isLoading = true
-        state.errorMessage = ""
+        isLoading = true
+        errorMessage = ""
         
         networkService.getAllEpisodes()
             .map({ (episodes) -> [EpisodeData] in
@@ -42,20 +42,20 @@ public final class EpisodesViewModel : ObservableObject {
     }
     
     private func onRecieve(_ completion: Subscribers.Completion<Error>) {
-        state.isLoading = false
+        isLoading = false
         
         switch completion {
             case .finished:
-                state.errorMessage = ""
+                errorMessage = ""
                 break
             case .failure:
-                state.errorMessage = "Error loading episodes info"
+                errorMessage = "Error loading episodes info"
         }
     }
 
     private func onRecieve(_ episodes: [EpisodeData]) {        
-        state.chapters = episodes
-        state.errorMessage = ""
-        state.isLoading = false
+        chapters = episodes
+        errorMessage = ""
+        isLoading = false
     }
 }
