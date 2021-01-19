@@ -21,23 +21,81 @@
 		790F848C25AD572E00424B92 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F848A25AD572E00424B92 /* EpisodesView.swift */; };
 		790F84C525AD9E1700424B92 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F84C425AD9E1700424B92 /* CharacterView.swift */; };
 		790F84C625AD9E1700424B92 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F84C425AD9E1700424B92 /* CharacterView.swift */; };
-		790F84CA25AD9E3300424B92 /* BBCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F84C925AD9E3300424B92 /* BBCharacterViewModel.swift */; };
-		790F84CB25AD9E3300424B92 /* BBCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F84C925AD9E3300424B92 /* BBCharacterViewModel.swift */; };
 		CF656AD125ADF384007C99F4 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AD025ADF384007C99F4 /* EpisodeCell.swift */; };
-		CF656ADF25ADFA66007C99F4 /* BBEpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656ADE25ADFA66007C99F4 /* BBEpisodesViewModel.swift */; };
-		CF656AE025ADFA66007C99F4 /* BBEpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656ADE25ADFA66007C99F4 /* BBEpisodesViewModel.swift */; };
-		CFD340EA25AE1622000FA619 /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340E925AE1622000FA619 /* DataLayer */; };
-		CFD340EC25AE162C000FA619 /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340EB25AE162C000FA619 /* DataLayer */; };
-		CFD340F725AE17D5000FA619 /* CoreLayerService in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340F625AE17D5000FA619 /* CoreLayerService */; };
-		CFD340F925AE17E1000FA619 /* CoreLayerService in Frameworks */ = {isa = PBXBuildFile; productRef = CFD340F825AE17E1000FA619 /* CoreLayerService */; };
-		CFD3410025AE1CC6000FA619 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD340FF25AE1CC6000FA619 /* ServiceProvider.swift */; };
-		CFD3410625AE1D95000FA619 /* DependancyLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3410525AE1D95000FA619 /* DependancyLocator.swift */; };
+		CF7889C025B606D500FFB683 /* HomeViewModelsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CF7889BF25B606D500FFB683 /* HomeViewModelsPackage */; };
+		CF7889C425B6071D00FFB683 /* HomeViewModelsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CF7889C325B6071D00FFB683 /* HomeViewModelsPackage */; };
+		CF7889CB25B6080000FFB683 /* HomeCorePackage in Frameworks */ = {isa = PBXBuildFile; productRef = CF7889CA25B6080000FFB683 /* HomeCorePackage */; };
+		CF7889D025B6082800FFB683 /* HomeServicePackage in Frameworks */ = {isa = PBXBuildFile; productRef = CF7889CF25B6082800FFB683 /* HomeServicePackage */; };
+		CF7889D425B6083500FFB683 /* HomeCorePackage in Frameworks */ = {isa = PBXBuildFile; productRef = CF7889D325B6083500FFB683 /* HomeCorePackage */; };
+		CF7889D625B6083500FFB683 /* HomeServicePackage in Frameworks */ = {isa = PBXBuildFile; productRef = CF7889D525B6083500FFB683 /* HomeServicePackage */; };
+		CF788A4E25B6725300FFB683 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF788A4C25B6725300FFB683 /* Interface.storyboard */; };
+		CF788A5025B6725700FFB683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF788A4F25B6725700FFB683 /* Assets.xcassets */; };
+		CF788A5725B6725800FFB683 /* watchDIHomework Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF788A5625B6725800FFB683 /* watchDIHomework Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF788A5C25B6725800FFB683 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A5B25B6725800FFB683 /* HostingController.swift */; };
+		CF788A5E25B6725800FFB683 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A5D25B6725800FFB683 /* ContentView.swift */; };
+		CF788A6025B6725800FFB683 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A5F25B6725800FFB683 /* ExtensionDelegate.swift */; };
+		CF788A6225B6725800FFB683 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A6125B6725800FFB683 /* NotificationController.swift */; };
+		CF788A6425B6725800FFB683 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A6325B6725800FFB683 /* NotificationView.swift */; };
+		CF788A6625B6725800FFB683 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A6525B6725800FFB683 /* ComplicationController.swift */; };
+		CF788A6825B6725A00FFB683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF788A6725B6725A00FFB683 /* Assets.xcassets */; };
+		CF788A6B25B6725A00FFB683 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF788A6A25B6725A00FFB683 /* Preview Assets.xcassets */; };
+		CF788A7025B6725A00FFB683 /* watchDIHomework.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CF788A4A25B6725300FFB683 /* watchDIHomework.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF788A8625B672BB00FFB683 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A8225B672BB00FFB683 /* EpisodeCell.swift */; };
+		CF788A8725B672BB00FFB683 /* SingleCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A8325B672BB00FFB683 /* SingleCharacterView.swift */; };
+		CF788A8825B672BB00FFB683 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A8425B672BB00FFB683 /* CharacterView.swift */; };
+		CF788A8925B672BB00FFB683 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A8525B672BB00FFB683 /* EpisodesView.swift */; };
+		CF788A9425B672F900FFB683 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A9225B672F900FFB683 /* Enums.swift */; };
+		CF788A9525B672F900FFB683 /* NavStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A9325B672F900FFB683 /* NavStack.swift */; };
+		CF788A9E25B6731D00FFB683 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CF788A9D25B6731D00FFB683 /* SDWebImageSwiftUI */; };
+		CF788AA025B6731D00FFB683 /* HomeViewModelsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CF788A9F25B6731D00FFB683 /* HomeViewModelsPackage */; };
+		CF788AA225B6731D00FFB683 /* HomeCorePackage in Frameworks */ = {isa = PBXBuildFile; productRef = CF788AA125B6731D00FFB683 /* HomeCorePackage */; };
+		CF788AA425B6731D00FFB683 /* HomeServicePackage in Frameworks */ = {isa = PBXBuildFile; productRef = CF788AA325B6731D00FFB683 /* HomeServicePackage */; };
 		CFE0A21425AE848B00F4932A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CFE0A21325AE848B00F4932A /* SDWebImageSwiftUI */; };
 		CFE0A21C25AE85D600F4932A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CFE0A21B25AE85D600F4932A /* SDWebImageSwiftUI */; };
-		CFE0A21F25AE862200F4932A /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD340FF25AE1CC6000FA619 /* ServiceProvider.swift */; };
-		CFE0A22225AE862400F4932A /* DependancyLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3410525AE1D95000FA619 /* DependancyLocator.swift */; };
 		CFE0A22525AE863600F4932A /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF656AD025ADF384007C99F4 /* EpisodeCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF788A5825B6725800FFB683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 790F844E25AD51B400424B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF788A5525B6725800FFB683;
+			remoteInfo = "watchDIHomework Extension";
+		};
+		CF788A6E25B6725A00FFB683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 790F844E25AD51B400424B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF788A4925B6725300FFB683;
+			remoteInfo = watchDIHomework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF788A7125B6725A00FFB683 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CF788A7025B6725A00FFB683 /* watchDIHomework.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF788A7425B6725A00FFB683 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF788A5725B6725800FFB683 /* watchDIHomework Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		790F845325AD51B400424B92 /* DIHomeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIHomeworkApp.swift; sourceTree = "<group>"; };
@@ -52,14 +110,29 @@
 		790F848225AD52FA00424B92 /* NavStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavStack.swift; sourceTree = "<group>"; };
 		790F848A25AD572E00424B92 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		790F84C425AD9E1700424B92 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
-		790F84C925AD9E3300424B92 /* BBCharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacterViewModel.swift; sourceTree = "<group>"; };
 		CF656AD025ADF384007C99F4 /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
-		CF656ADE25ADFA66007C99F4 /* BBEpisodesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBEpisodesViewModel.swift; sourceTree = "<group>"; };
 		CF656B0725AE0748007C99F4 /* DIHomework.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DIHomework.entitlements; sourceTree = "<group>"; };
-		CFD340E425AE15CE000FA619 /* DataLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DataLayer; sourceTree = "<group>"; };
-		CFD340F125AE1737000FA619 /* CoreLayerService */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreLayerService; sourceTree = "<group>"; };
-		CFD340FF25AE1CC6000FA619 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
-		CFD3410525AE1D95000FA619 /* DependancyLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependancyLocator.swift; sourceTree = "<group>"; };
+		CF788A4A25B6725300FFB683 /* watchDIHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchDIHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF788A4D25B6725300FFB683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CF788A4F25B6725700FFB683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF788A5125B6725700FFB683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF788A5625B6725800FFB683 /* watchDIHomework Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchDIHomework Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF788A5B25B6725800FFB683 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		CF788A5D25B6725800FFB683 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF788A5F25B6725800FFB683 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CF788A6125B6725800FFB683 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CF788A6325B6725800FFB683 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		CF788A6525B6725800FFB683 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CF788A6725B6725A00FFB683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF788A6A25B6725A00FFB683 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF788A6C25B6725A00FFB683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF788A6D25B6725A00FFB683 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CF788A8225B672BB00FFB683 /* EpisodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
+		CF788A8325B672BB00FFB683 /* SingleCharacterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCharacterView.swift; sourceTree = "<group>"; };
+		CF788A8425B672BB00FFB683 /* CharacterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		CF788A8525B672BB00FFB683 /* EpisodesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		CF788A9225B672F900FFB683 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		CF788A9325B672F900FFB683 /* NavStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +140,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7889D025B6082800FFB683 /* HomeServicePackage in Frameworks */,
+				CF7889CB25B6080000FFB683 /* HomeCorePackage in Frameworks */,
 				CFE0A21425AE848B00F4932A /* SDWebImageSwiftUI in Frameworks */,
-				CFD340EA25AE1622000FA619 /* DataLayer in Frameworks */,
-				CFD340F925AE17E1000FA619 /* CoreLayerService in Frameworks */,
+				CF7889C025B606D500FFB683 /* HomeViewModelsPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +151,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7889D625B6083500FFB683 /* HomeServicePackage in Frameworks */,
+				CF7889D425B6083500FFB683 /* HomeCorePackage in Frameworks */,
 				CFE0A21C25AE85D600F4932A /* SDWebImageSwiftUI in Frameworks */,
-				CFD340EC25AE162C000FA619 /* DataLayer in Frameworks */,
-				CFD340F725AE17D5000FA619 /* CoreLayerService in Frameworks */,
+				CF7889C425B6071D00FFB683 /* HomeViewModelsPackage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF788A5325B6725800FFB683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF788AA425B6731D00FFB683 /* HomeServicePackage in Frameworks */,
+				CF788AA225B6731D00FFB683 /* HomeCorePackage in Frameworks */,
+				CF788A9E25B6731D00FFB683 /* SDWebImageSwiftUI in Frameworks */,
+				CF788AA025B6731D00FFB683 /* HomeViewModelsPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +179,8 @@
 				790F845225AD51B400424B92 /* Shared */,
 				790F845C25AD51B400424B92 /* iOS */,
 				790F846325AD51B400424B92 /* macOS */,
+				CF788A4B25B6725300FFB683 /* watchDIHomework */,
+				CF788A5A25B6725800FFB683 /* watchDIHomework Extension */,
 				790F845B25AD51B400424B92 /* Products */,
 				790F84B825AD9D5D00424B92 /* Frameworks */,
 			);
@@ -101,9 +189,6 @@
 		790F845225AD51B400424B92 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				CFD340FE25AE1BFA000FA619 /* DI */,
-				790F84B225AD8E9500424B92 /* Packages */,
-				790F84AA25AD71BB00424B92 /* ViewModel */,
 				790F848925AD571100424B92 /* UI */,
 				790F847925AD528800424B92 /* Navigation */,
 				790F845325AD51B400424B92 /* DIHomeworkApp.swift */,
@@ -118,6 +203,8 @@
 			children = (
 				790F845A25AD51B400424B92 /* DIHomework.app */,
 				790F846225AD51B400424B92 /* DIHomework.app */,
+				CF788A4A25B6725300FFB683 /* watchDIHomework.app */,
+				CF788A5625B6725800FFB683 /* watchDIHomework Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,24 +245,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		790F84AA25AD71BB00424B92 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CF656ADE25ADFA66007C99F4 /* BBEpisodesViewModel.swift */,
-				790F84C925AD9E3300424B92 /* BBCharacterViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		790F84B225AD8E9500424B92 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				CFD340F125AE1737000FA619 /* CoreLayerService */,
-				CFD340E425AE15CE000FA619 /* DataLayer */,
-			);
-			path = Packages;
-			sourceTree = "<group>";
-		};
 		790F84B825AD9D5D00424B92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,13 +260,69 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		CFD340FE25AE1BFA000FA619 /* DI */ = {
+		CF788A4B25B6725300FFB683 /* watchDIHomework */ = {
 			isa = PBXGroup;
 			children = (
-				CFD340FF25AE1CC6000FA619 /* ServiceProvider.swift */,
-				CFD3410525AE1D95000FA619 /* DependancyLocator.swift */,
+				CF788A4C25B6725300FFB683 /* Interface.storyboard */,
+				CF788A4F25B6725700FFB683 /* Assets.xcassets */,
+				CF788A5125B6725700FFB683 /* Info.plist */,
 			);
-			path = DI;
+			path = watchDIHomework;
+			sourceTree = "<group>";
+		};
+		CF788A5A25B6725800FFB683 /* watchDIHomework Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CF788A9125B672F900FFB683 /* Navigation */,
+				CF788A8025B672BB00FFB683 /* UI */,
+				CF788A5B25B6725800FFB683 /* HostingController.swift */,
+				CF788A5D25B6725800FFB683 /* ContentView.swift */,
+				CF788A5F25B6725800FFB683 /* ExtensionDelegate.swift */,
+				CF788A6125B6725800FFB683 /* NotificationController.swift */,
+				CF788A6325B6725800FFB683 /* NotificationView.swift */,
+				CF788A6525B6725800FFB683 /* ComplicationController.swift */,
+				CF788A6725B6725A00FFB683 /* Assets.xcassets */,
+				CF788A6C25B6725A00FFB683 /* Info.plist */,
+				CF788A6D25B6725A00FFB683 /* PushNotificationPayload.apns */,
+				CF788A6925B6725A00FFB683 /* Preview Content */,
+			);
+			path = "watchDIHomework Extension";
+			sourceTree = "<group>";
+		};
+		CF788A6925B6725A00FFB683 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF788A6A25B6725A00FFB683 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF788A8025B672BB00FFB683 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CF788A8125B672BB00FFB683 /* Cells */,
+				CF788A8325B672BB00FFB683 /* SingleCharacterView.swift */,
+				CF788A8425B672BB00FFB683 /* CharacterView.swift */,
+				CF788A8525B672BB00FFB683 /* EpisodesView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CF788A8125B672BB00FFB683 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF788A8225B672BB00FFB683 /* EpisodeCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CF788A9125B672F900FFB683 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CF788A9225B672F900FFB683 /* Enums.swift */,
+				CF788A9325B672F900FFB683 /* NavStack.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,16 +335,19 @@
 				790F845625AD51B400424B92 /* Sources */,
 				790F845725AD51B400424B92 /* Frameworks */,
 				790F845825AD51B400424B92 /* Resources */,
+				CF788A7125B6725A00FFB683 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF788A6F25B6725A00FFB683 /* PBXTargetDependency */,
 			);
 			name = "DIHomework (iOS)";
 			packageProductDependencies = (
-				CFD340E925AE1622000FA619 /* DataLayer */,
-				CFD340F825AE17E1000FA619 /* CoreLayerService */,
 				CFE0A21325AE848B00F4932A /* SDWebImageSwiftUI */,
+				CF7889BF25B606D500FFB683 /* HomeViewModelsPackage */,
+				CF7889CA25B6080000FFB683 /* HomeCorePackage */,
+				CF7889CF25B6082800FFB683 /* HomeServicePackage */,
 			);
 			productName = "DIHomework (iOS)";
 			productReference = 790F845A25AD51B400424B92 /* DIHomework.app */;
@@ -239,13 +367,54 @@
 			);
 			name = "DIHomework (macOS)";
 			packageProductDependencies = (
-				CFD340EB25AE162C000FA619 /* DataLayer */,
-				CFD340F625AE17D5000FA619 /* CoreLayerService */,
 				CFE0A21B25AE85D600F4932A /* SDWebImageSwiftUI */,
+				CF7889C325B6071D00FFB683 /* HomeViewModelsPackage */,
+				CF7889D325B6083500FFB683 /* HomeCorePackage */,
+				CF7889D525B6083500FFB683 /* HomeServicePackage */,
 			);
 			productName = "DIHomework (macOS)";
 			productReference = 790F846225AD51B400424B92 /* DIHomework.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CF788A4925B6725300FFB683 /* watchDIHomework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF788A7825B6725A00FFB683 /* Build configuration list for PBXNativeTarget "watchDIHomework" */;
+			buildPhases = (
+				CF788A4825B6725300FFB683 /* Resources */,
+				CF788A7425B6725A00FFB683 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF788A5925B6725800FFB683 /* PBXTargetDependency */,
+			);
+			name = watchDIHomework;
+			productName = watchDIHomework;
+			productReference = CF788A4A25B6725300FFB683 /* watchDIHomework.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CF788A5525B6725800FFB683 /* watchDIHomework Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF788A7725B6725A00FFB683 /* Build configuration list for PBXNativeTarget "watchDIHomework Extension" */;
+			buildPhases = (
+				CF788A5225B6725800FFB683 /* Sources */,
+				CF788A5325B6725800FFB683 /* Frameworks */,
+				CF788A5425B6725800FFB683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchDIHomework Extension";
+			packageProductDependencies = (
+				CF788A9D25B6731D00FFB683 /* SDWebImageSwiftUI */,
+				CF788A9F25B6731D00FFB683 /* HomeViewModelsPackage */,
+				CF788AA125B6731D00FFB683 /* HomeCorePackage */,
+				CF788AA325B6731D00FFB683 /* HomeServicePackage */,
+			);
+			productName = "watchDIHomework Extension";
+			productReference = CF788A5625B6725800FFB683 /* watchDIHomework Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -262,6 +431,12 @@
 					790F846125AD51B400424B92 = {
 						CreatedOnToolsVersion = 12.3;
 					};
+					CF788A4925B6725300FFB683 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CF788A5525B6725800FFB683 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 				};
 			};
 			buildConfigurationList = 790F845125AD51B400424B92 /* Build configuration list for PBXProject "DIHomework" */;
@@ -275,6 +450,9 @@
 			mainGroup = 790F844D25AD51B400424B92;
 			packageReferences = (
 				CFE0A21225AE848B00F4932A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				CF7889BE25B606D500FFB683 /* XCRemoteSwiftPackageReference "home-view-model" */,
+				CF7889C925B6080000FFB683 /* XCRemoteSwiftPackageReference "home-core-package" */,
+				CF7889CE25B6082800FFB683 /* XCRemoteSwiftPackageReference "home-service-package" */,
 			);
 			productRefGroup = 790F845B25AD51B400424B92 /* Products */;
 			projectDirPath = "";
@@ -282,6 +460,8 @@
 			targets = (
 				790F845925AD51B400424B92 /* DIHomework (iOS) */,
 				790F846125AD51B400424B92 /* DIHomework (macOS) */,
+				CF788A4925B6725300FFB683 /* watchDIHomework */,
+				CF788A5525B6725800FFB683 /* watchDIHomework Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -303,6 +483,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF788A4825B6725300FFB683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF788A5025B6725700FFB683 /* Assets.xcassets in Resources */,
+				CF788A4E25B6725300FFB683 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF788A5425B6725800FFB683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF788A6B25B6725A00FFB683 /* Preview Assets.xcassets in Resources */,
+				CF788A6825B6725A00FFB683 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -310,14 +508,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFD3410625AE1D95000FA619 /* DependancyLocator.swift in Sources */,
-				790F84CA25AD9E3300424B92 /* BBCharacterViewModel.swift in Sources */,
 				790F848525AD52FA00424B92 /* NavStack.swift in Sources */,
-				CFD3410025AE1CC6000FA619 /* ServiceProvider.swift in Sources */,
 				CF656AD125ADF384007C99F4 /* EpisodeCell.swift in Sources */,
 				790F846825AD51B400424B92 /* ContentView.swift in Sources */,
 				790F848325AD52FA00424B92 /* Enums.swift in Sources */,
-				CF656ADF25ADFA66007C99F4 /* BBEpisodesViewModel.swift in Sources */,
 				790F846625AD51B400424B92 /* DIHomeworkApp.swift in Sources */,
 				790F848B25AD572E00424B92 /* EpisodesView.swift in Sources */,
 				790F84C525AD9E1700424B92 /* CharacterView.swift in Sources */,
@@ -328,21 +522,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790F84CB25AD9E3300424B92 /* BBCharacterViewModel.swift in Sources */,
-				CF656AE025ADFA66007C99F4 /* BBEpisodesViewModel.swift in Sources */,
 				790F848625AD52FA00424B92 /* NavStack.swift in Sources */,
 				CFE0A22525AE863600F4932A /* EpisodeCell.swift in Sources */,
-				CFE0A21F25AE862200F4932A /* ServiceProvider.swift in Sources */,
 				790F846925AD51B400424B92 /* ContentView.swift in Sources */,
 				790F848425AD52FA00424B92 /* Enums.swift in Sources */,
 				790F846725AD51B400424B92 /* DIHomeworkApp.swift in Sources */,
-				CFE0A22225AE862400F4932A /* DependancyLocator.swift in Sources */,
 				790F848C25AD572E00424B92 /* EpisodesView.swift in Sources */,
 				790F84C625AD9E1700424B92 /* CharacterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF788A5225B6725800FFB683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF788A5E25B6725800FFB683 /* ContentView.swift in Sources */,
+				CF788A5C25B6725800FFB683 /* HostingController.swift in Sources */,
+				CF788A6225B6725800FFB683 /* NotificationController.swift in Sources */,
+				CF788A6025B6725800FFB683 /* ExtensionDelegate.swift in Sources */,
+				CF788A8925B672BB00FFB683 /* EpisodesView.swift in Sources */,
+				CF788A8625B672BB00FFB683 /* EpisodeCell.swift in Sources */,
+				CF788A6425B6725800FFB683 /* NotificationView.swift in Sources */,
+				CF788A8825B672BB00FFB683 /* CharacterView.swift in Sources */,
+				CF788A9525B672F900FFB683 /* NavStack.swift in Sources */,
+				CF788A8725B672BB00FFB683 /* SingleCharacterView.swift in Sources */,
+				CF788A6625B6725800FFB683 /* ComplicationController.swift in Sources */,
+				CF788A9425B672F900FFB683 /* Enums.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF788A5925B6725800FFB683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF788A5525B6725800FFB683 /* watchDIHomework Extension */;
+			targetProxy = CF788A5825B6725800FFB683 /* PBXContainerItemProxy */;
+		};
+		CF788A6F25B6725A00FFB683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF788A4925B6725300FFB683 /* watchDIHomework */;
+			targetProxy = CF788A6E25B6725A00FFB683 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF788A4C25B6725300FFB683 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF788A4D25B6725300FFB683 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		790F846C25AD51B400424B92 /* Debug */ = {
@@ -553,6 +786,96 @@
 			};
 			name = Release;
 		};
+		CF788A7225B6725A00FFB683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BPU4A2G93L;
+				IBSC_MODULE = watchDIHomework_Extension;
+				INFOPLIST_FILE = watchDIHomework/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolai.DIHomework.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		CF788A7325B6725A00FFB683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BPU4A2G93L;
+				IBSC_MODULE = watchDIHomework_Extension;
+				INFOPLIST_FILE = watchDIHomework/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolai.DIHomework.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		CF788A7525B6725A00FFB683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"watchDIHomework Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZWXN4J2VCP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "watchDIHomework Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolai.DIHomework.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		CF788A7625B6725A00FFB683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"watchDIHomework Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZWXN4J2VCP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "watchDIHomework Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolai.DIHomework.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,9 +906,51 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CF788A7725B6725A00FFB683 /* Build configuration list for PBXNativeTarget "watchDIHomework Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF788A7525B6725A00FFB683 /* Debug */,
+				CF788A7625B6725A00FFB683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF788A7825B6725A00FFB683 /* Build configuration list for PBXNativeTarget "watchDIHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF788A7225B6725A00FFB683 /* Debug */,
+				CF788A7325B6725A00FFB683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CF7889BE25B606D500FFB683 /* XCRemoteSwiftPackageReference "home-view-model" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Nikolaiko/home-view-model.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		CF7889C925B6080000FFB683 /* XCRemoteSwiftPackageReference "home-core-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Nikolaiko/home-core-package.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		CF7889CE25B6082800FFB683 /* XCRemoteSwiftPackageReference "home-service-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Nikolaiko/home-service-package.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		CFE0A21225AE848B00F4932A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -597,21 +962,55 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CFD340E925AE1622000FA619 /* DataLayer */ = {
+		CF7889BF25B606D500FFB683 /* HomeViewModelsPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = DataLayer;
+			package = CF7889BE25B606D500FFB683 /* XCRemoteSwiftPackageReference "home-view-model" */;
+			productName = HomeViewModelsPackage;
 		};
-		CFD340EB25AE162C000FA619 /* DataLayer */ = {
+		CF7889C325B6071D00FFB683 /* HomeViewModelsPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = DataLayer;
+			package = CF7889BE25B606D500FFB683 /* XCRemoteSwiftPackageReference "home-view-model" */;
+			productName = HomeViewModelsPackage;
 		};
-		CFD340F625AE17D5000FA619 /* CoreLayerService */ = {
+		CF7889CA25B6080000FFB683 /* HomeCorePackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CoreLayerService;
+			package = CF7889C925B6080000FFB683 /* XCRemoteSwiftPackageReference "home-core-package" */;
+			productName = HomeCorePackage;
 		};
-		CFD340F825AE17E1000FA619 /* CoreLayerService */ = {
+		CF7889CF25B6082800FFB683 /* HomeServicePackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CoreLayerService;
+			package = CF7889CE25B6082800FFB683 /* XCRemoteSwiftPackageReference "home-service-package" */;
+			productName = HomeServicePackage;
+		};
+		CF7889D325B6083500FFB683 /* HomeCorePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF7889C925B6080000FFB683 /* XCRemoteSwiftPackageReference "home-core-package" */;
+			productName = HomeCorePackage;
+		};
+		CF7889D525B6083500FFB683 /* HomeServicePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF7889CE25B6082800FFB683 /* XCRemoteSwiftPackageReference "home-service-package" */;
+			productName = HomeServicePackage;
+		};
+		CF788A9D25B6731D00FFB683 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFE0A21225AE848B00F4932A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		CF788A9F25B6731D00FFB683 /* HomeViewModelsPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF7889BE25B606D500FFB683 /* XCRemoteSwiftPackageReference "home-view-model" */;
+			productName = HomeViewModelsPackage;
+		};
+		CF788AA125B6731D00FFB683 /* HomeCorePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF7889C925B6080000FFB683 /* XCRemoteSwiftPackageReference "home-core-package" */;
+			productName = HomeCorePackage;
+		};
+		CF788AA325B6731D00FFB683 /* HomeServicePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF7889CE25B6082800FFB683 /* XCRemoteSwiftPackageReference "home-service-package" */;
+			productName = HomeServicePackage;
 		};
 		CFE0A21325AE848B00F4932A /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;

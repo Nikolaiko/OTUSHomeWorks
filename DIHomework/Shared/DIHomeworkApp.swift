@@ -1,5 +1,6 @@
 import SwiftUI
-import CoreLayerService
+import HomeCorePackage
+import HomeServicePackage
 
 @main
 struct DIHomeworkApp: App {
