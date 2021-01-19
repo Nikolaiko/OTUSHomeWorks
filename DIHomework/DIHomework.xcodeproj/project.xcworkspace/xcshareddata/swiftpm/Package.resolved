@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/Nikolaiko/home-core-package.git",
         "state": {
           "branch": "main",
-          "revision": "545a6150dd346a9d5aa9f6bb48f0ef4888bb9044",
+          "revision": "7c5e5eaa035de53b92c7293497950e0beac8e6f7",
           "version": null
         }
       },
@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/Nikolaiko/home-service-package.git",
         "state": {
           "branch": "main",
-          "revision": "6666b7538551bf21e947e0825697976bff9123bc",
+          "revision": "c61c397f5073feb710a7fba2e8ab2ea1255f6c91",
           "version": null
         }
       },
@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/Nikolaiko/home-view-model.git",
         "state": {
           "branch": "main",
-          "revision": "1e2c969b50789962832a41d86474988ca79b447b",
+          "revision": "ec2c5497d6ef8c1b1962844ada386dffedbf6c1e",
           "version": null
         }
       },

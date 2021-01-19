@@ -10,13 +10,11 @@ struct EpisodeCell: View {
         VStack {
             Text(episode.title)
                 .foregroundColor(Color.black)
-                .font(.title)
                 .padding(.top, 5)
                 .padding(.bottom, 5)
             
             Text("Characters : ")
-                .foregroundColor(Color.black)
-                .font(.title)
+                .foregroundColor(Color.black)                
                 .padding(.bottom, 5)
             ForEach(episode.characters, id: \.self) { character in
                 HStack {

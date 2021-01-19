@@ -13,8 +13,7 @@ struct CharacterView: View {
             VStack(alignment: .center) {
                 HStack {
                     Spacer()
-                    Text(characterName)
-                        .font(.largeTitle)
+                    Text(characterName)                        
                         .foregroundColor(.black)
                     Spacer()
                 }
@@ -23,8 +22,7 @@ struct CharacterView: View {
                         .resizable()
                         .placeholder {
                             Rectangle().foregroundColor(.gray)
-                        }
-                        .indicator(.activity)
+                        }                        
                         .transition(.fade(duration: 0.5))
                         .scaledToFit()
                 }

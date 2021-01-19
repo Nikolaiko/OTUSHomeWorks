@@ -1,10 +1,3 @@
-//
-//  HostingController.swift
-//  watchDIHomework Extension
-//
-//  Created by Nikolai Baklanov on 19.01.2021.
-//
-
 import WatchKit
 import Foundation
 import SwiftUI

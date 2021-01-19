@@ -11,7 +11,7 @@ public struct EpisodesView: View {
                 HStack {
                     Spacer()
                     Text("Breaking bad episodes")
-                        .font(.largeTitle)
+                        .lineLimit(4)                        
                         .foregroundColor(.black)
                     Spacer()
                 }

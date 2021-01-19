@@ -1,16 +1,12 @@
-//
-//  ExtensionDelegate.swift
-//  watchDIHomework Extension
-//
-//  Created by Nikolai Baklanov on 19.01.2021.
-//
-
 import WatchKit
+import HomeServicePackage
+import HomeCorePackage
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
-        // Perform any final initialization of your application.
+        ServiceProvider.shared.addDependancy(dependancy: RealmStorageService() as CacheService)
+        ServiceProvider.shared.addDependancy(dependancy: BreakingBadApi(ServiceProvider.shared.getDependancy(type: CacheService.self)!) as NetworkService)
     }
 
     func applicationDidBecomeActive() {

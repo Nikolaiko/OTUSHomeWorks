@@ -41,7 +41,6 @@
 		CF788A6B25B6725A00FFB683 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF788A6A25B6725A00FFB683 /* Preview Assets.xcassets */; };
 		CF788A7025B6725A00FFB683 /* watchDIHomework.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CF788A4A25B6725300FFB683 /* watchDIHomework.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF788A8625B672BB00FFB683 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A8225B672BB00FFB683 /* EpisodeCell.swift */; };
-		CF788A8725B672BB00FFB683 /* SingleCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A8325B672BB00FFB683 /* SingleCharacterView.swift */; };
 		CF788A8825B672BB00FFB683 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A8425B672BB00FFB683 /* CharacterView.swift */; };
 		CF788A8925B672BB00FFB683 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A8525B672BB00FFB683 /* EpisodesView.swift */; };
 		CF788A9425B672F900FFB683 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF788A9225B672F900FFB683 /* Enums.swift */; };
@@ -128,7 +127,6 @@
 		CF788A6C25B6725A00FFB683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF788A6D25B6725A00FFB683 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		CF788A8225B672BB00FFB683 /* EpisodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
-		CF788A8325B672BB00FFB683 /* SingleCharacterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCharacterView.swift; sourceTree = "<group>"; };
 		CF788A8425B672BB00FFB683 /* CharacterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		CF788A8525B672BB00FFB683 /* EpisodesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		CF788A9225B672F900FFB683 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -301,7 +299,6 @@
 			isa = PBXGroup;
 			children = (
 				CF788A8125B672BB00FFB683 /* Cells */,
-				CF788A8325B672BB00FFB683 /* SingleCharacterView.swift */,
 				CF788A8425B672BB00FFB683 /* CharacterView.swift */,
 				CF788A8525B672BB00FFB683 /* EpisodesView.swift */,
 			);
@@ -545,7 +542,6 @@
 				CF788A6425B6725800FFB683 /* NotificationView.swift in Sources */,
 				CF788A8825B672BB00FFB683 /* CharacterView.swift in Sources */,
 				CF788A9525B672F900FFB683 /* NavStack.swift in Sources */,
-				CF788A8725B672BB00FFB683 /* SingleCharacterView.swift in Sources */,
 				CF788A6625B6725800FFB683 /* ComplicationController.swift in Sources */,
 				CF788A9425B672F900FFB683 /* Enums.swift in Sources */,
 			);
