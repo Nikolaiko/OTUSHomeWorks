@@ -1,4 +1,4 @@
-package com.big.dota2kmm.shared
+package com.big.myapplication.shared
 
 
 import platform.UIKit.UIDevice

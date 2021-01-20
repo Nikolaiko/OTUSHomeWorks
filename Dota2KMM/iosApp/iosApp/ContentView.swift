@@ -1,13 +1,21 @@
 import SwiftUI
 import shared
 
-func greet() -> String {
-    return Greeting().greeting()
-}
-
 struct ContentView: View {
+    @ObservedObject private var viewModel = CivilizationViewModel()
+    
     var body: some View {
-        Text(greet())
+        NavControllerView(transition: .custom(.slide)) {
+            ScrollView {
+                ForEach(viewModel.civilizations, id:\.id) { item in
+                    CivilizationView(civilization: item)
+                }
+                .listRowBackground(Color.white)
+                .onAppear {
+                    viewModel.loadCivData()
+                }
+            }
+        }
     }
 }
 
