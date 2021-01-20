@@ -2,7 +2,6 @@ package com.big.dota2kmm.androidApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.big.dota2kmm.shared.Greeting
 import android.widget.TextView
 
 fun greet(): String {
