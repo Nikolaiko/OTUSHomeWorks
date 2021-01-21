@@ -8,14 +8,12 @@ import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
 class UnitRepository {
-    val coroutineContext: CoroutineContext = ioDispatcher
     var delegate: UnitDelegate? = null
 
     private val service = UnitService()
     private var scope = CoroutineScope(Dispatchers.Unconfined + Job())
 
     fun attachDelegate(view: UnitDelegate) {
-        scope = PresenterScope(coroutineContext)
         this.delegate = view
 
     }
