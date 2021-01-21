@@ -1,7 +1,0 @@
-C:\Users\KIBERONE\Documents\GitHub\OTUSHomeWorks\Lessons\Lessons\bin\Debug\Lessons.exe.config
-C:\Users\KIBERONE\Documents\GitHub\OTUSHomeWorks\Lessons\Lessons\bin\Debug\Lessons.exe
-C:\Users\KIBERONE\Documents\GitHub\OTUSHomeWorks\Lessons\Lessons\bin\Debug\Lessons.pdb
-C:\Users\KIBERONE\Documents\GitHub\OTUSHomeWorks\Lessons\Lessons\obj\Debug\Lessons.csprojAssemblyReference.cache
-C:\Users\KIBERONE\Documents\GitHub\OTUSHomeWorks\Lessons\Lessons\obj\Debug\Lessons.csproj.CoreCompileInputs.cache
-C:\Users\KIBERONE\Documents\GitHub\OTUSHomeWorks\Lessons\Lessons\obj\Debug\Lessons.exe
-C:\Users\KIBERONE\Documents\GitHub\OTUSHomeWorks\Lessons\Lessons\obj\Debug\Lessons.pdb

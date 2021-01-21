@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
+    kotlin("plugin.serialization") version "1.4.10"
 }
 
 val ktorVersion = "1.4.0"
@@ -11,14 +12,19 @@ val sqlDelightVersion: String by project
 val coroutinesVersion = "1.3.9-native-mt"
 
 kotlin {
+
     android()
-    ios {
+
+    val iOSTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget = ::iosArm64
+
+    iOSTarget("ios") {
         binaries {
             framework {
                 baseName = "shared"
             }
         }
     }
+
     sourceSets {
         val commonMain by getting {
             dependencies {
@@ -36,13 +42,9 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                implementation("com.google.android.material:material:1.2.1")
-                implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10")
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.12.0")
-                api("io.ktor:ktor-client-core-jvm:1.4.1")
-                api("io.ktor:ktor-client-json-jvm:1.4.1")
-                api("io.ktor:ktor-client-serialization-jvm:1.4.0")
+                implementation("com.squareup.picasso:picasso:2.71828")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
+                implementation("io.ktor:ktor-client-android:$ktorVersion")
             }
         }
         val androidTest by getting {
@@ -53,9 +55,7 @@ kotlin {
         }
         val iosMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.8")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:0.12.0")
-                api("io.ktor:ktor-client-ios:1.4.1")
+                implementation("io.ktor:ktor-client-ios:$ktorVersion")
             }
         }
         val iosTest by getting
@@ -74,9 +74,7 @@ android {
 val packForXcode by tasks.creating(Sync::class) {
     group = "build"
     val mode = System.getenv("CONFIGURATION") ?: "DEBUG"
-    val sdkName = System.getenv("SDK_NAME") ?: "iphonesimulator"
-    val targetName = "ios" + if (sdkName.startsWith("iphoneos")) "Arm64" else "X64"
-    val framework = kotlin.targets.getByName<KotlinNativeTarget>(targetName).binaries.getFramework(mode)
+    val framework = kotlin.targets.getByName<KotlinNativeTarget>("ios").binaries.getFramework(mode)
     inputs.property("mode", mode)
     dependsOn(framework.linkTask)
     val targetDir = File(buildDir, "xcode-frameworks")

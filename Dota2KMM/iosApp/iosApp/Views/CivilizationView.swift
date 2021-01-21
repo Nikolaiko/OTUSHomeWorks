@@ -19,12 +19,11 @@ struct CivilizationView: View {
                 
                 Text("Army type : \(civilization.armyType)")
                     .foregroundColor(.blue)
-                
-                Text("Uniq units (tapable) : ")
-                    .foregroundColor(.blue)
-                    .bold()
-                
+                                                
                 if civilization.uniqueUnit.count > 0 {
+                    Text("Uniq units (tapable) : ")
+                        .foregroundColor(.blue)
+                        .bold()
                     ForEach(civilization.uniqueUnit, id:\.self) { unitName in
                         Text(getNameFromLink(link: unitName))
                             .foregroundColor(.blue)

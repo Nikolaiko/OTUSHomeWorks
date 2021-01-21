@@ -8,8 +8,16 @@ struct UnitView: View {
     
     var body: some View {
         VStack {
-            Text(unitName)
-                .font(.title)
+            Text("Unit name : \(viewModel.unit?.name ?? "Uint name")")
+            Text("Description : \(viewModel.unit?.description_ ?? "Unit description")")
+                .bold()
+                .multilineTextAlignment(.leading)
+            Text("Dlc : \(viewModel.unit?.dlcName ?? "Vanila")")
+            Text("Era : \(viewModel.unit?.age ?? "Stone")")
+            
+            Button(action: { nav.pop() }, label: {
+                Text("Back")
+            })
         }
         .onAppear {
             viewModel.loadUnitData(name: unitName)

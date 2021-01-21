@@ -9,7 +9,10 @@ import kotlinx.serialization.json.Json
 class NetworkService {
     val httpClient = HttpClient {
         install(JsonFeature) {
-            val json = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
+            val json = kotlinx.serialization.json.Json {
+                ignoreUnknownKeys = true
+                isLenient = true
+            }
             serializer = KotlinxSerializer(json)
         }
     }
