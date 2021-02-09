@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CFB22EE325B9D12E001C92F9 /* AnimalsClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CFB22EE225B9D12E001C92F9 /* AnimalsClassifier 1.mlmodel */; };
+		CFB6FBD325D2C8C100C82107 /* CameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6FBD225D2C8C100C82107 /* CameraRepresentable.swift */; };
+		CFB6FBDF25D2D20100C82107 /* ModelClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6FBDE25D2D20100C82107 /* ModelClassifier.swift */; };
+		CFB6FBEE25D2E96E00C82107 /* lion1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFB6FBE725D2E96E00C82107 /* lion1.jpg */; };
+		CFB6FBEF25D2E96E00C82107 /* elep2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFB6FBE825D2E96E00C82107 /* elep2.jpg */; };
+		CFB6FBF025D2E96E00C82107 /* cat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFB6FBE925D2E96E00C82107 /* cat1.jpg */; };
+		CFB6FBF125D2E96E00C82107 /* cat2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFB6FBEA25D2E96E00C82107 /* cat2.jpg */; };
+		CFB6FBF225D2E96E00C82107 /* elep1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CFB6FBEB25D2E96E00C82107 /* elep1.jpeg */; };
+		CFB6FBF325D2E96E00C82107 /* cat3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFB6FBEC25D2E96E00C82107 /* cat3.jpg */; };
+		CFB6FBF425D2E96E00C82107 /* lion2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFB6FBED25D2E96E00C82107 /* lion2.jpg */; };
+		CFB6FBFA25D2ED0A00C82107 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6FBF925D2ED0A00C82107 /* DetailsView.swift */; };
+		CFB6FC0125D2EDF500C82107 /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6FBFF25D2EDF500C82107 /* NavigationStack.swift */; };
+		CFB6FC0225D2EDF500C82107 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6FC0025D2EDF500C82107 /* Enums.swift */; };
+		CFB6FC0725D2EE9A00C82107 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6FC0625D2EE9A00C82107 /* ListView.swift */; };
 		CFC070E225A9B2D900149EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070E125A9B2D900149EFA /* AppDelegate.swift */; };
 		CFC070E425A9B2D900149EFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070E325A9B2D900149EFA /* SceneDelegate.swift */; };
 		CFC070E625A9B2D900149EFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC070E525A9B2D900149EFA /* ContentView.swift */; };
@@ -36,7 +49,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CFB22EE225B9D12E001C92F9 /* AnimalsClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "AnimalsClassifier 1.mlmodel"; sourceTree = SOURCE_ROOT; };
+		CFB22EE225B9D12E001C92F9 /* AnimalsClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "AnimalsClassifier 1.mlmodel"; path = "CreateMLTest/Model/AnimalsClassifier 1.mlmodel"; sourceTree = SOURCE_ROOT; };
+		CFB6FBD225D2C8C100C82107 /* CameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRepresentable.swift; sourceTree = "<group>"; };
+		CFB6FBDE25D2D20100C82107 /* ModelClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClassifier.swift; sourceTree = "<group>"; };
+		CFB6FBE725D2E96E00C82107 /* lion1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lion1.jpg; sourceTree = "<group>"; };
+		CFB6FBE825D2E96E00C82107 /* elep2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elep2.jpg; sourceTree = "<group>"; };
+		CFB6FBE925D2E96E00C82107 /* cat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat1.jpg; sourceTree = "<group>"; };
+		CFB6FBEA25D2E96E00C82107 /* cat2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat2.jpg; sourceTree = "<group>"; };
+		CFB6FBEB25D2E96E00C82107 /* elep1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elep1.jpeg; sourceTree = "<group>"; };
+		CFB6FBEC25D2E96E00C82107 /* cat3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat3.jpg; sourceTree = "<group>"; };
+		CFB6FBED25D2E96E00C82107 /* lion2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lion2.jpg; sourceTree = "<group>"; };
+		CFB6FBF925D2ED0A00C82107 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		CFB6FBFF25D2EDF500C82107 /* NavigationStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
+		CFB6FC0025D2EDF500C82107 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		CFB6FC0625D2EE9A00C82107 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		CFC070DE25A9B2D900149EFA /* CreateMLTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreateMLTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC070E125A9B2D900149EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC070E325A9B2D900149EFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +104,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFB6FBD125D2C8AB00C82107 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6FBD225D2C8C100C82107 /* CameraRepresentable.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		CFB6FBD725D2CF0300C82107 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFB22EE225B9D12E001C92F9 /* AnimalsClassifier 1.mlmodel */,
+				CFB6FBDE25D2D20100C82107 /* ModelClassifier.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFB6FBE325D2E1D700C82107 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6FBE925D2E96E00C82107 /* cat1.jpg */,
+				CFB6FBEA25D2E96E00C82107 /* cat2.jpg */,
+				CFB6FBEC25D2E96E00C82107 /* cat3.jpg */,
+				CFB6FBEB25D2E96E00C82107 /* elep1.jpeg */,
+				CFB6FBE825D2E96E00C82107 /* elep2.jpg */,
+				CFB6FBE725D2E96E00C82107 /* lion1.jpg */,
+				CFB6FBED25D2E96E00C82107 /* lion2.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		CFB6FBF825D2ECF200C82107 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFC070E525A9B2D900149EFA /* ContentView.swift */,
+				CFB6FBF925D2ED0A00C82107 /* DetailsView.swift */,
+				CFB6FC0625D2EE9A00C82107 /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFB6FBFE25D2EDF500C82107 /* NavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6FBFF25D2EDF500C82107 /* NavigationStack.swift */,
+				CFB6FC0025D2EDF500C82107 /* Enums.swift */,
+			);
+			path = NavigationStack;
+			sourceTree = "<group>";
+		};
 		CFC070D525A9B2D900149EFA = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +177,13 @@
 		CFC070E025A9B2D900149EFA /* CreateMLTest */ = {
 			isa = PBXGroup;
 			children = (
-				CFB22EE225B9D12E001C92F9 /* AnimalsClassifier 1.mlmodel */,
+				CFB6FBFE25D2EDF500C82107 /* NavigationStack */,
+				CFB6FBF825D2ECF200C82107 /* Views */,
+				CFB6FBE325D2E1D700C82107 /* Images */,
+				CFB6FBD725D2CF0300C82107 /* Model */,
+				CFB6FBD125D2C8AB00C82107 /* Camera */,
 				CFC070E125A9B2D900149EFA /* AppDelegate.swift */,
 				CFC070E325A9B2D900149EFA /* SceneDelegate.swift */,
-				CFC070E525A9B2D900149EFA /* ContentView.swift */,
 				CFC070E725A9B2DD00149EFA /* Assets.xcassets */,
 				CFC070EC25A9B2DD00149EFA /* LaunchScreen.storyboard */,
 				CFC070EF25A9B2DD00149EFA /* Info.plist */,
@@ -242,9 +321,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB6FBF125D2E96E00C82107 /* cat2.jpg in Resources */,
 				CFC070EE25A9B2DD00149EFA /* LaunchScreen.storyboard in Resources */,
+				CFB6FBF425D2E96E00C82107 /* lion2.jpg in Resources */,
 				CFC070EB25A9B2DD00149EFA /* Preview Assets.xcassets in Resources */,
 				CFC070E825A9B2DD00149EFA /* Assets.xcassets in Resources */,
+				CFB6FBF325D2E96E00C82107 /* cat3.jpg in Resources */,
+				CFB6FBEE25D2E96E00C82107 /* lion1.jpg in Resources */,
+				CFB6FBF225D2E96E00C82107 /* elep1.jpeg in Resources */,
+				CFB6FBF025D2E96E00C82107 /* cat1.jpg in Resources */,
+				CFB6FBEF25D2E96E00C82107 /* elep2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +356,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC070E225A9B2D900149EFA /* AppDelegate.swift in Sources */,
+				CFB6FBFA25D2ED0A00C82107 /* DetailsView.swift in Sources */,
+				CFB6FC0725D2EE9A00C82107 /* ListView.swift in Sources */,
 				CFC070E425A9B2D900149EFA /* SceneDelegate.swift in Sources */,
+				CFB6FBDF25D2D20100C82107 /* ModelClassifier.swift in Sources */,
+				CFB6FBD325D2C8C100C82107 /* CameraRepresentable.swift in Sources */,
 				CFB22EE325B9D12E001C92F9 /* AnimalsClassifier 1.mlmodel in Sources */,
+				CFB6FC0125D2EDF500C82107 /* NavigationStack.swift in Sources */,
+				CFB6FC0225D2EDF500C82107 /* Enums.swift in Sources */,
 				CFC070E625A9B2D900149EFA /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
