@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    id("kotlin-android-extensions")
 }
 
 dependencies {
@@ -8,6 +9,12 @@ dependencies {
     implementation("com.google.android.material:material:1.2.1")
     implementation("androidx.appcompat:appcompat:1.2.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.3")
+
+    implementation ("io.reactivex.rxjava2:rxkotlin:2.4.0")
+    implementation ("io.reactivex.rxjava2:rxandroid:2.1.1")
 }
 
 android {
